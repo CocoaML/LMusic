@@ -57,7 +57,7 @@
         </service>
 
         <activity
-            android:name=".lmusic.MainActivity"
+            android:name=".lmusic.GuidingActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:launchMode="singleTop">
@@ -83,7 +83,7 @@
         </activity>
 
         <activity
-            android:name=".lmusic.GuidingActivity"
+            android:name=".lmusic.MainActivity"
             android:configChanges="orientation|screenSize"
             android:exported="false"
             android:launchMode="singleTop">

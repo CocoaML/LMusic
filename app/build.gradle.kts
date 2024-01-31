@@ -99,20 +99,20 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "1.8"
     }
     composeOptions {
         kotlinCompilerExtensionVersion = findProperty("compose_compiler_version").toString()
     }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
-    }
+//    packaging {
+//        resources {
+//            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+//        }
+//    }
 
     lint {
         disable += "Instantiatable"
@@ -214,3 +214,4 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:${findProperty("lifecycle_version")}")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:${findProperty("lifecycle_version")}")
 }
+
